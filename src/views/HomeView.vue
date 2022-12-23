@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Menu />
-    <Carrousel />
+    <div class="carrousel">
+      <Carrousel />
+    </div>
     <div class="cards">
       <Card />
       <Card />
@@ -37,46 +39,17 @@ export default {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+.carrousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   background-color: #eefff0;
 }
-header {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  height: 90px;
-  background: #019c9a94;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.4px);
-  -webkit-backdrop-filter: blur(6.4px);
-  z-index: 1000;
-}
-.logo img {
-  margin-top: 1%;
-  margin-left: 5%;
-  width: 15%;
-}
-header li {
-  margin-top: 30px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  margin-right: 25px;
-  display: inline;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-header li:hover {
-  text-shadow: 3px 3px 6px rgb(255, 255, 255);
-}
-header a {
-  margin-top: 39px;
-}
-a:-webkit-any-link {
-  font-size: 14px;
-  color: #eefff0;
-  cursor: pointer;
-  text-decoration: none;
-}
+
 .admin button {
   cursor: pointer;
   background: rgba(1, 156, 154, 0.76);
