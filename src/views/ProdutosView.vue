@@ -1,3 +1,14 @@
+<script>
+import MenuItem from "@/components/navbar.vue";
+
+export default {
+  name: "HomeView",
+  components: {
+    MenuItem,
+  },
+};
+</script>
+
 <template>
-  <h1>Produtos</h1>
+  <MenuItem />
 </template>
