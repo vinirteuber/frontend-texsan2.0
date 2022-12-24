@@ -28,6 +28,21 @@ export default {
   width: 15%;
 }
 
+.whatsapp-link img {
+  position: fixed;
+  cursor: pointer;
+  justify-content: flex-end;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 60px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+}
+
 header {
   margin-right: 20px;
   justify-content: center;
